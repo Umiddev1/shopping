@@ -1,0 +1,85 @@
+.header__mobile {
+  padding: 20px 0;
+}
+.header__mobile-logo {
+  width: 90px;
+  height: 13px;
+}
+.header__mobile-search {
+    position: relative;
+    width: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.header__mobile-form {
+  position: relative;
+}
+.header__mobile-input {
+    background: #f4f4f4;
+    width: 100%;
+    outline: 0;
+    border: none; 
+    height: 34px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #222;
+    padding: 0 35px 0 10px;
+    border-radius: 17px;
+}
+.header__mobile-seachbtn {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  right: 5px;
+  top: 8px;
+  cursor: pointer;
+}
+.header__mobile-icons {
+  font-size: 18px;
+}
+.bx-menu {
+  font-size: 25px;
+  cursor: pointer;
+}
+.headeer__btnsss {
+  border: none;
+  background-color: transparent;
+}
+.header__mobile-item {
+  width: 100%;
+  border-bottom: 1px dashed $color-gray;
+}
+.header__mobile-link {
+  font-size: 13px;
+  display: inline-block;
+  padding: 15px 0;
+  color: $color-gray;
+}
+.header__mobile-closes {
+  background-color: $color-hd-bg;
+  padding-bottom: 50px;
+}
+.header__mobile-close {
+  position: absolute;
+  left: 200px;
+  top: 20px;
+}
+.bottom-menu__lists {
+  align-items: center;
+  padding: 5px 15px;
+  background: #fff;
+}
+.bottom-menu__gr {
+  width: 70px;
+}
+.bottom-menu__icons {
+  color: #222;
+  font-size: 20px;
+}
+.bottom-menu__link {
+  color: $color-be;
+}
+.spn {
+  position: relative;
+  bottom: 4px;
+}

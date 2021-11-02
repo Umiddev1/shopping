@@ -1,0 +1,86 @@
+.hero {
+  font-family: $font-poppins;
+  position: relative;
+  z-index: 0;
+  &__icons {
+    top: 45%;
+    width: 4%;
+    height: 12%;
+    background-color: #111;
+  }
+  &__des {
+    position: absolute;
+    bottom: 25%;
+    left: 6%;
+    z-index: 999;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    transform: scale(1.2);
+    object-fit: cover;
+  }
+  &__text-color {
+    font-size: 30px;
+    color: #1477dd;
+    font-weight: 900;
+  }
+  &__dollor {
+    font-size: 25px;
+  }
+  &__title {
+    font-size: 38px;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 18px;
+  }
+  &__text {
+    max-width: 492px;
+    font-size: 13px;
+    margin-bottom: 60px;
+  }
+  &__btn {
+    padding: 15px 39.57px;
+    font-family:$font-roboto;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 40px;
+    transition: all 0.2s ease;
+  }
+  .hero__iconss {
+    margin-right: 10px;
+  }
+  .hero__dess {
+    position: absolute;
+    z-index: 999;
+    left: 26%;
+    top: 10%;
+  }
+  .hero__texts {
+    width: 660px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    color: $color-4242;
+  }
+  .hero__btn-two {
+    background-color: #f8891b;
+    &:hover {
+      background-color: $color-hd-bg;
+    }
+  }
+  .hero__text-color-two {
+    color: #da465b;
+  }
+  .hero__btn-three {
+    background-color: #da465b;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .hero__des {
+      display: none;
+    }
+}

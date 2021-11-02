@@ -5,11 +5,221 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson</title>
-  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <!-- bootstrap icons -->
+  <!-- icon -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-
-  <script src="js/main.js"></script>
+  <div class="shopping-header-section">
+    <div class="shopping-header__contents">
+      <header class="site-header shopping-header__header header">
+        <div class="header__mobile d-md-none">
+          <div class="container">
+            <div class="header__mobile-contents d-flex align-items-center justify-content-between">
+              <div class="header__mobile-logos">
+                <a class="header__mobile-logolink" href="#">
+                  <img class="header__mobile-logo" src="img/header-imgs/header-img.png" alt="header-monile-logo">
+                </a>
+              </div>
+              <div class="header__mobile-search">
+                <form class="header__mobile-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <input class="header__mobile-input" type="search" name="search" placeholder="Enter your keyword" aria-label="Search your product">
+                  <button class="header__mobile-seachbtn">
+                    <span class="header__mobile-icons">
+                      <i class='bx bx-search-alt-2'></i>
+                    </span>
+                  </button>
+                </form>
+              </div>
+              <div class="d-flex justify-content-end">
+                <div class="header__mobile-menu">
+                  <button class="headeer__btnsss" type="button"  data-bs-toggle="offcanvas" data-bs-target="#demo"><i class='bx bx-menu'></i></button>
+                  <div class="offcanvas offcanvas-end" id="demo">
+                    <div class="offcanvas-header header__mobile-closes">
+                      <button type="button" class="btn-close text-reset header__mobile-close btn btn-light" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="header__mobile-list">
+                        <li class="header__mobile-item">
+                          <a class="header__mobile-link" href="#">HOME</a>
+                        </li>
+                        <li class="header__mobile-item">
+                          <a class="header__mobile-link" href="#">ALL DEMOS</a>
+                        </li>
+                        <li class="header__mobile-item">
+                          <a class="header__mobile-link" href="#">PAGES</a>
+                        </li>
+                        <li class="header__mobile-item">
+                          <a class="header__mobile-link" href="#">CATEGORIES</a>
+                        </li>
+                        <li class="header__mobile-item">
+                          <a class="header__mobile-link" href="#">BLOG</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="bottom-menu">
+            <div class="container">
+              <div class="bottom-menu__lists d-flex fixed-bottom justify-content-center shadow bg-body rounded">
+                <div class="bottom-menu__gr">
+                  <a class="d-flex flex-column  bottom-menu__link" href="#"><i class='bx bx-home-alt bottom-menu__icons text-center'></i><span class="bottom-menu__span text-center">Home</span></a>
+                </div>
+                <div  class="bottom-menu__gr">
+                  <a class="d-flex flex-column  bottom-menu__link" href="#"><i class='bx bx-heart bottom-menu__icons text-center'></i><span class="bottom-menu__span text-center">Home</span></a>
+                </div>                
+                <div  class="bottom-menu__gr">
+                    <a class="d-flex flex-column bottom-menu__link" href="#"><i class="bi bi-basket bottom-menu__icons text-center"></i><span class="bottom-menu__span spn text-center">Home</span></a>
+                </div>
+                  <div  class="bottom-menu__gr">
+                    <a class="d-flex flex-column bottom-menu__link" href="#"><i class="bi bi-gear bottom-menu__icons text-center "></i><span class="bottom-menu__span spn text-center">Home</span></a>
+                  </div>
+                  <div  class="bottom-menu__gr">
+                    <a class="d-flex flex-column  bottom-menu__link" href="#"><i class='bx bx-arrow-to-top bottom-menu__icons text-center'></i><span class="bottom-menu__span text-center">Home</span></a>
+                  </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="header__desktop d-none d-md-block">
+          <div class="container">
+            <div class="header__desktop-top row justify-content-between align-items-center">
+              <div class="header__desktop-logos col-xl-3 col-lg-3 col-md-2">
+                <h1>
+                  <a class="header__logo-link" href="#">
+                  <img class="header__logo" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/logo_1128979b-f391-432e-b408-12fa16768dc7_300x.png?v=1603187690" alt="logo">
+                </a></h1>
+              </div>
+              <div class="header__desktop-group d-flex justify-content-between col-xl-9 col-lg-9 col-md-10">
+                <div class="header__desktops">
+                <div class="header__desktopss d-flex align-items-center">
+                <div class="header__forms">
+                  <form class="header__desktop-forms" action="https://echo.htmlacademy.ru/" method="post">
+                      <input class="header__desktop-inp" type="search" placeholder="Enter your keyword" name="search" aria-label="search a product">
+                      <button class="header__desktop-btn">
+                        <i class='bx bx-search-alt-2'></i>
+                      </button>
+                  </form>
+                </div>
+                <div class="header__groups-items">
+                  <ul class="header__groups-list d-flex"> 
+                    <li class="header__item"><a class="header__link" href="#"><i class='bx bx-user header__desktop-icons'></i></a></li>
+                    <li class="header__item"><a class="header__link" href="#"><i class='bx bx-heart header__desktop-icons'></i></a></li>
+                    <li class="header__item"><a class="header__link" href="#"><i class="bi bi-basket header__desktop-icons header__desktop-iconss"></i></a></li>
+                    <li class="header__item"><a class="header__link" href="#"><i class="bi bi-gear header__desktop-icons header__desktop-iconss"></i></a></li>
+                  </ul>
+                </div>
+                </div>
+                </div>
+              </div>
+           </div>
+          </div>
+          <div class="header__bottom">
+            <div class="container">
+              <nav class="header-bottom__nav d-flex justify-content-center">
+                <ul class="header-bottom__list d-flex">
+                  <li class="header-bottom__item">
+                    <a class="header-bottom__link" href="#">HOME</a> 
+                  </li>
+                  <li class="header-bottom__item dropdown">
+                    <a class="header-bottom__link dropdown" data-bs-toggle="dropdown" href="#">ALL DEMOS <span><i class='bx bx-chevron-down'></i></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Link 1</a></li>
+                      <li><a class="dropdown-item" href="#">Link 2</a></li>
+                      <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="header-bottom__item">
+                    <a class="header-bottom__link dropdown" href="#" data-bs-toggle="dropdown">PAGES  <span><i class='bx bx-chevron-down'></i></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Link 1</a></li>
+                      <li><a class="dropdown-item" href="#">Link 2</a></li>
+                      <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="header-bottom__item">
+                    <a class="header-bottom__link dropdown" href="#" data-bs-toggle="dropdown">CATEGORIES <span><i class='bx bx-chevron-down'></i></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Link 1</a></li>
+                      <li><a class="dropdown-item" href="#">Link 2</a></li>
+                      <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="header-bottom__item">
+                    <a class="header-bottom__link dropdown" href="#" data-bs-toggle="dropdown">BLOG  <span><i class='bx bx-chevron-down'></i></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Link 1</a></li>
+                      <li><a class="dropdown-item" href="#">Link 2</a></li>
+                      <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div class="hero">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="hero__img" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/slider-show-1_66ffbc40-efeb-48a4-95d8-590eba9597fd_2048x.jpg?v=1601620725" class="d-block w-100" alt="hero-img">
+            <div class="hero__des">
+            <p class="hero__text-color">From <span class="hero__dollor"><sup>$</sup></span>1900</p>
+            <h2 class="hero__title">VINOVA SMARTPHONE</h2>
+            <p class="hero__text">Pros love iMac. So we created one just for you. It’s packed with the most powerful graphics and processors ever in a Mac, along with the most advanced storage, memory.</p>
+            <div class="hero__btns">
+              <a class="hero__btn btn-primary" href="#"><span class="hero__iconss"><i class="bi bi-bag"></i></span> SHOP NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="hero__img" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/slider-show-2_341dac96-3ed1-4ce8-8343-daa4c6d8b224_2048x.jpg?v=1601621068" class="d-block w-100" alt="hero-img">
+          <div class="hero__dess">
+            <p class="hero__text-color text-center">From <span class="hero__dollor"><sup>$</sup></span>1900</p>
+            <h2 class="hero__title text-center">MACBOOK AIR</h2>
+            <p class="hero__texts text-center">Powerful creativity and productivity tools live inside every Mac — apps <br>
+              that help you explore, connect, and work more efficiently.</p>
+            <div class="hero__btns d-flex justify-content-center">
+              <a class="hero__btn hero__btn-two btn-primary" href="#"><span class="hero__iconss"><i class="bi bi-bag"></i></span> SHOP NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="hero__img" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/slider-show-3_35382bde-054c-4c31-a610-76b28ce97330_2048x.jpg?v=1601621098" class="d-block w-100" alt="hero-img">
+          <div class="hero__dess">
+            <p class="hero__text-color text-center hero__text-color-two">From <span class="hero__dollor"><sup>$</sup></span>2900</p>
+            <h2 class="hero__title text-center">Vinova SmartPhone</h2>
+            <p class="hero__texts text-center">Powerful creativity and productivity tools live inside every Mac — apps <br>
+              that help you explore, connect, and work more efficiently.</p>
+            <div class="hero__btns d-flex justify-content-center">
+              <a class="hero__btn hero__btn-two hero__btn-three btn-primary" href="#"><span class="hero__iconss"><i class="bi bi-bag"></i></span> SHOP NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev hero__icons" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next hero__icons" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
 </body>
+<script src="js/main.js"></script>
 </html>
+
