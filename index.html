@@ -155,7 +155,8 @@
                                   </div>
                                   <div class="modal__forms-group">
                                     <label class="modal__form-lb" for="pass"><i class='bx bx-lock-open moda__form-icon'></i></label>
-                                    <input class="moda__form-inp" type="password" name="password" id="pass" placeholder="Password" required>
+                                    <input class="moda__form-inp passw" type="password" name="password" id="pass" placeholder="Password" required>
+                                    <button class="moda__form-eye"><i id="eye" class="bi bi-eye-slash-fill"></i></button>
                                   </div>
                                   <div class="modal__form-forgot">
                                     <p class="modal__form-forgot-text"><span class="modal__form-forgot-icon"><i class="bi bi-envelope-fill"></i></span>Forgot your <a href="#">Password ?</a></p>
@@ -293,10 +294,12 @@
                   </li>
                   <li class="header-bottom__item">
                     <a class="header-bottom__link dropdown" href="#" data-bs-toggle="dropdown">BLOG  <span><i class='bx bx-chevron-down'></i></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Link 1</a></li>
-                      <li><a class="dropdown-item" href="#">Link 2</a></li>
-                      <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    <ul class="dropdown-menu blog">
+                      <li class="dropdown-item homepage__item"><a class="dropdown-link homepage__link" href="#">Blog sidebar</a></li>
+                      <li class="dropdown-item homepage__item"><a class="dropdown-link homepage__link" href="#">Blog none sidebar</a></li>
+                      <li class="dropdown-item homepage__item"><a class="dropdown-item homepage__link" href="#">Blog column</a></li>
+                      <li class="dropdown-item homepage__item"><a class="dropdown-item homepage__link" href="#">Blog list</a></li>
+                      <li class="dropdown-item homepage__item"><a class="dropdown-item homepage__link" href="#">Blog Detail</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -356,8 +359,46 @@
       </button>
     </div>
   </div>
-  <section>
-  </section>
+  <main>
+    <section class="intro" id="intros">
+        <div class="intro__contents">
+          <div class="row spacing-20 ">
+            <div class="intro__imgs col-lg-3 col-md-3 mb-sm-20">
+              <img class="intro__img w-100" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/banner-1_23a53455-5829-4a88-88a8-7c7e99acd498_1920x.jpg?v=1601621441" alt="intro-img">
+            </div>
+            <div class="intro__imgs col-lg-6 col-md-6">
+              <img class="intro__img w-100" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/banner-2_45d90c4a-cc38-4cd1-9dd2-e5c748d85ded_1920x.jpg?v=1601621463" alt="intro-img">
+            </div>
+            <div class="intro__imgs col-lg-3 col-md-3 mb-sm-20">
+              <img class="intro__img w-100" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/banner-3_a8e10c28-e71f-4c67-89c7-c6042b332fe9_1920x.jpg?v=1601621484" alt="intro-img">
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="servic" id="services">
+      <div class="servic__container container">
+        <div class="servic__contents">
+          <div class="row">
+            <div class="servic__des col-lg-4 col-md-4 col-sm-12">
+              <span class="servic__icon text-center"><img class="servic__img" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/policy-1_a56ec713-e9bd-41de-836b-b607e3932442_100x.png?v=1601622033" alt=""></span>
+              <h2 class="servic__title text-center">WORLDWIDE DELIVERY</h2>
+              <p class="servic__text text-center">We work with the biggest delivery networks. It doesn't matter where in the world you are.</p>
+            </div>
+            <div class="servic__des col-lg-4 col-md-4 col-sm-12">
+              <span class="servic__icon text-center"><img class="servic__img" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/policy-2_086176f5-82d8-4fd9-b016-d82a35137557_100x.png?v=1601622053" alt=""></span>
+              <h2 class="servic__title text-center">FREE SHIPPING</h2>
+              <p class="servic__text text-center">Stop wondering about shipping costs, what you see is what you pay.</p>
+            </div>
+            <div class="servic__des col-lg-4 col-md-4 col-sm-12">
+              <span class="servic__icon text-center"><img class="servic__img" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/policy-3_34039ac5-4426-4826-a810-38f2c72e41e3_100x.png?v=1601622066" alt=""></span>
+              <h2 class="servic__title text-center">MONEY BACK GUARANTEE</h2>
+              <p class="servic__text text-center">We work with the biggest delivery networks. It doesn't matter where in the world you are.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 <script src="js/main.js"></script>
 </html>

@@ -1,0 +1,24 @@
+.servic {
+}
+.servic__title {
+  font-family: $font-poppins;
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+}
+.servic__text {
+  padding: 0 50px;
+  font-family: $font-roboto;
+  font-size: 13px;
+  font-weight: 400;
+  color: $color-666;
+  margin-bottom: 15px;
+}
+.servic__icon {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 13px;
+}
+.servic__img {
+  margin-bottom: 13px;
+}

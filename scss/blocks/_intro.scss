@@ -1,0 +1,8 @@
+.intro {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.intro__imgs {
+  margin-bottom: 30px;
+  @include card-hover;
+}

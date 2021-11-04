@@ -709,6 +709,15 @@ a {
   text-transform: uppercase;
 }
 
+.moda__form-eye {
+  position: absolute;
+  padding: 13px 10px;
+  right: 1px;
+  top: 1px;
+  background-color: #eeeded;
+  border: none;
+}
+
 .header__mobile {
   padding: 20px 0;
 }
@@ -804,6 +813,9 @@ a {
 }
 
 .bottom-menu__link {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
   color: #bebebe;
 }
 
@@ -837,6 +849,11 @@ a {
 .header-bottom__item:hover .landing__menu {
   visibility: visible;
   opacity: 1;
+}
+
+.header-bottom__item:hover .blog {
+  opacity: 1;
+  visibility: visible;
 }
 
 .header-bottom__link {
@@ -910,6 +927,15 @@ a {
   padding: 20px 20px;
 }
 
+.blog {
+  min-width: 270px;
+  padding-left: 30px;
+  padding-right: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
 .hero {
   font-family: "Poppins", sans-serif;
   position: relative;
@@ -969,7 +995,7 @@ a {
 .hero .hero__dess {
   position: absolute;
   z-index: 999;
-  left: 26%;
+  left: 350px;
   top: 10%;
 }
 .hero .hero__texts {
@@ -1252,7 +1278,32 @@ a {
     transform: translateX(0);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1114px) {
+  .hero__img {
+    transform: scale(1.3);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .hero .hero__dess {
+    left: 220px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .hero .hero__dess {
+    left: 160px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero .hero__des {
+    bottom: 5%;
+  }
+}
+@media screen and (max-width: 900px) and (max-width: 842px) {
+  .hero .hero__dess {
+    left: 90px;
+  }
+}
+@media screen and (max-width: 900px) and (max-width: 768px) {
   .hero__des {
     display: none;
   }
@@ -1260,4 +1311,57 @@ a {
   .hero__dess {
     display: none;
   }
+}
+.intro {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.intro__imgs {
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+}
+.intro__imgs::after {
+  content: "";
+  display: inline-block;
+  width: 150%;
+  height: 80%;
+  position: absolute;
+  top: -75%;
+  right: 32%;
+  background: #ffffff26;
+  transform: skewY(-50deg);
+  transition: all 0.35s ease;
+}
+.intro__imgs:hover::after {
+  top: 120%;
+  right: -75%;
+  transition: all 0.35s ease;
+}
+
+.servic__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+}
+
+.servic__text {
+  padding: 0 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.servic__icon {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 13px;
+}
+
+.servic__img {
+  margin-bottom: 13px;
 }/*# sourceMappingURL=main.css.map */

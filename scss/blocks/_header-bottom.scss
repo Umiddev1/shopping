@@ -20,6 +20,10 @@
   visibility: visible;
   opacity: 1;
 }
+.header-bottom__item:hover .blog {
+  opacity: 1;
+  visibility: visible;
+}
 .header-bottom__link {
   display: inline-block;
   font-family: $font-poppins;
@@ -82,4 +86,12 @@
   left: 150px !important;
   transform: none !important;
   padding: 20px 20px;
+}
+.blog {
+  min-width: 270px;
+  padding-left: 30px;
+  padding-right: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
