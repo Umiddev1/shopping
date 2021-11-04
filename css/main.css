@@ -345,6 +345,7 @@ html {
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *,
@@ -1338,6 +1339,10 @@ a {
   top: 120%;
   right: -75%;
   transition: all 0.35s ease;
+}
+
+.servic {
+  overflow-x: hidden;
 }
 
 .servic__title {
