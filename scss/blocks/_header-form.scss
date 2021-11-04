@@ -1,0 +1,181 @@
+.modal__forms-title {
+  font-family: $font-poppins;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 13px 0;
+  border-bottom: 1px solid #e5e5e8;
+  padding-bottom: 8px;
+  position: relative;
+}
+.modal__forms-title::after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  position: absolute;
+  top: 27px;
+  display: block;
+  background-color: #0c549f;
+}
+.modal__close {
+  font-size: 9px;
+  transform: rotateZ(0deg);
+  padding: 5px 0;
+  transition: transform 0.5s ease;
+  &:hover {
+    transform: rotateZ(180deg);
+  }
+}
+.modal__forms-text {
+  font-family: $font-roboto;
+  font-size: 13px;
+  color: #666;
+  font-weight: 400;
+  margin: 0 0 14px 0;
+}
+.modal__forms-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal__form-lb {
+  position: absolute;
+  cursor: pointer;
+  left: 15px;
+  top: 8px;
+  font-size: 20px;
+  color: $color-666;
+  opacity: 0.8;
+}
+.moda__form-inp {
+    width: 100%;
+    height: 22px;
+    border: 1px solid #e5e5e8;
+    padding: 0;
+    padding-left: 70px;
+    padding-right: 30px;
+    height: 46px;
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 2px;
+    font-family: $font-roboto;
+    font-size: 12px;
+    color: $color-666;
+    font-weight: 400;
+    outline: #0c549f;
+    transition: all 0.2s ease;
+    &:hover {
+      border-color: #0c549f;
+    }
+}
+.moda__form-icon {
+  position: relative;
+}
+.moda__form-icon::after {
+  content: "";
+  width: 2px;
+  height: 45px;
+  position: absolute;
+  left: 30px;
+  bottom: -12px;
+  display: inline-block;
+  background-color: rgb(238, 236, 236);
+}
+.modal__form-check {
+  margin-bottom: 30px;
+}
+.modal__form-checklb {
+  font-family: $font-roboto;
+  font-size: 13px;
+  font-weight: 400px;
+  color: #bbb;
+}
+.modal__form-check {
+  margin-right: 10px;
+}
+.modal__form-btn {
+  font-family: $font-roboto;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $color-hd-bg;
+    border-color: $color-hd-bg;
+  }
+}
+.modal__form-forgot {
+  margin-top: 25px;
+}
+.modal__form-forgot-text {
+  font-family: $font-roboto;
+  font-size: 11px;
+  font-weight: 500;
+  color: #bbb;
+}
+.modal__form-forgot-icon {
+  font-size: 14px;
+  color: #656565;
+  margin-right: 15px;
+}
+.modal__form-btnss {
+  padding: 12px 40px;
+}
+.desktop-top__dropdown {
+  width: 260px;
+  height: 262px;
+  padding: 7px 0px 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  transform: translate(0 , 78px) !important;
+}
+.desktop-top__dropdown-item {
+  font-family: $font-roboto;
+  padding-right: 50px;
+}
+.desktop-top__dropdown-item::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+.desktop-top__dropdown-link {
+  font-size: 10px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px 0;
+  padding-left: 20px;
+  color: $color-666;
+  text-transform: uppercase;
+}
+.dropdown__icon {
+  position: relative;
+  top: 2px;
+  font-size: 12px;
+}
+.dropdown__icons {
+  color: #ccc;
+}
+.dropdown__currens {
+  margin: 15px 48px 0;
+}
+.dropdown__currens__title {
+  font-family: $font-poppins;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222;
+}
+.dropdown__currens-list {
+  margin-left: 15px;
+}
+.dropdown__currens-item {
+  margin-right: 10px;
+}
+.dropdown__currens-item--active .dropdown__currens-link{
+  color: #0c549f;
+}
+.dropdown__currens-link {
+  font-family: $font-roboto;
+  font-size: 10px;
+  font-weight: 700;
+  color: $color-666;
+  text-transform: uppercase;
+}

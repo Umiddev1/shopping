@@ -17,7 +17,7 @@
   &__img {
     width: 100%;
     height: 100%;
-    margin-top: 60px;
+    margin-top: 50px;
     transform: scale(1.2);
     object-fit: cover;
   }
@@ -78,7 +78,139 @@
     background-color: #da465b;
   }
 }
-
+  .hero__title-one {
+    animation-name: one-title;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  .hero__text-one {
+    animation-name: one-text;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  .hero__text-color-one {
+    animation-name: text-color-one;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  .hero__btn-one {
+    animation-name: btn-one;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    display: inline-block;
+  }
+  @keyframes one-title {
+    0% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    25% {
+      transform: skew(17deg, 0deg);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes one-text {
+    0% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    25% {
+      transform: skew(17deg, 0deg);
+    }
+    50% {
+      transform: translateX(-100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes text-color-one {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    25% {
+      transform: skew(17deg, 0deg);
+    }
+    50% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes btn-one {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .hero__title-two {
+    animation-name: title-two;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  .hero__text-two {
+    animation-name: text-two;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+  }
+  .hero__btn-two {
+    animation-name: btn-two;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes title-two {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes text-two {
+    0% {
+      transform: translateX(400px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes btn-two {
+    0% {
+      transform: translateX(-400px);
+      opacity: 0;
+    }
+    75% {
+      transform: skew(17deg, 0);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 @media screen and (max-width: 768px) {
     .hero__des {
       display: none;

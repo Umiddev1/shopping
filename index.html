@@ -75,16 +75,16 @@
                   <a class="d-flex flex-column  bottom-menu__link" href="#"><i class='bx bx-home-alt bottom-menu__icons text-center'></i><span class="bottom-menu__span text-center">Home</span></a>
                 </div>
                 <div  class="bottom-menu__gr">
-                  <a class="d-flex flex-column  bottom-menu__link" href="#"><i class='bx bx-heart bottom-menu__icons text-center'></i><span class="bottom-menu__span text-center">Home</span></a>
+                  <a class="d-flex flex-column  bottom-menu__link" href="#"><i class='bx bx-heart bottom-menu__icons text-center'></i><span class="bottom-menu__span text-center">Wishlist</span></a>
                 </div>                
                 <div  class="bottom-menu__gr">
-                    <a class="d-flex flex-column bottom-menu__link" href="#"><i class="bi bi-basket bottom-menu__icons text-center"></i><span class="bottom-menu__span spn text-center">Home</span></a>
+                    <a class="d-flex flex-column bottom-menu__link" href="#"><i class="bi bi-basket bottom-menu__icons text-center"></i><span class="bottom-menu__span spn text-center">Cart</span></a>
                 </div>
                   <div  class="bottom-menu__gr">
-                    <a class="d-flex flex-column bottom-menu__link" href="#"><i class="bi bi-gear bottom-menu__icons text-center "></i><span class="bottom-menu__span spn text-center">Home</span></a>
+                    <a class="d-flex flex-column bottom-menu__link" href="#"><i class="bi bi-gear bottom-menu__icons text-center "></i><span class="bottom-menu__span spn text-center">Setting</span></a>
                   </div>
                   <div  class="bottom-menu__gr">
-                    <a class="d-flex flex-column  bottom-menu__link" href="#"><i class='bx bx-arrow-to-top bottom-menu__icons text-center'></i><span class="bottom-menu__span text-center">Home</span></a>
+                    <a class="d-flex flex-column  bottom-menu__link" href="#"><i class='bx bx-arrow-to-top bottom-menu__icons text-center'></i><span class="bottom-menu__span text-center">On Top</span></a>
                   </div>
               </div>
             </div>
@@ -92,33 +92,113 @@
         </div>
         <div class="header__desktop d-none d-md-block">
           <div class="container">
-            <div class="header__desktop-top row justify-content-between align-items-center">
-              <div class="header__desktop-logos col-xl-3 col-lg-3 col-md-2">
-                <h1>
-                  <a class="header__logo-link" href="#">
-                  <img class="header__logo" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/logo_1128979b-f391-432e-b408-12fa16768dc7_300x.png?v=1603187690" alt="logo">
-                </a></h1>
-              </div>
-              <div class="header__desktop-group d-flex justify-content-between col-xl-9 col-lg-9 col-md-10">
-                <div class="header__desktops">
-                <div class="header__desktopss d-flex align-items-center">
-                <div class="header__forms">
-                  <form class="header__desktop-forms" action="https://echo.htmlacademy.ru/" method="post">
-                      <input class="header__desktop-inp" type="search" placeholder="Enter your keyword" name="search" aria-label="search a product">
-                      <button class="header__desktop-btn">
-                        <i class='bx bx-search-alt-2'></i>
-                      </button>
+           <div class="header__desktop-top desktop-top">
+              <div class="desktop-top__contents d-flex justify-content-between align-items-center">
+                <div class="desktop-top__logos">
+                  <a class="desktop-top__logo-link" href="#">
+                    <img class="desktop-top__logo" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/logo_1128979b-f391-432e-b408-12fa16768dc7_300x.png?v=1603187690" alt="logo">
+                  </a>
+                </div>
+                  <form class="desktop-top__form " action="https://echo.htmlacademy.ru/" method="post">
+                    <input class="desktop-top__inp" type="search" name="search" placeholder="Enter your keyword" aria-label="search">
+                    <button class="desktop-top__btn"><i class='bx bx-search-alt-2'></i></button>
                   </form>
-                </div>
-                <div class="header__groups-items">
-                  <ul class="header__groups-list d-flex"> 
-                    <li class="header__item"><a class="header__link" href="#"><i class='bx bx-user header__desktop-icons'></i></a></li>
-                    <li class="header__item"><a class="header__link" href="#"><i class='bx bx-heart header__desktop-icons'></i></a></li>
-                    <li class="header__item"><a class="header__link" href="#"><i class="bi bi-basket header__desktop-icons header__desktop-iconss"></i></a></li>
-                    <li class="header__item"><a class="header__link" href="#"><i class="bi bi-gear header__desktop-icons header__desktop-iconss"></i></a></li>
+                <div class="desktop-top__icons">
+                  <ul class="desktop-top__list d-flex align-items-center m-0">
+                    <li class="desktop-top__item">
+                      <a class="desktop-top__link desktop-top__links" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#"><i class='bx bx-user'></i></a>
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content desktop-top__modal">
+                          <div class="modal-header desktop-top__modal-hd">
+                            <button type="button" class="btn-close modal__close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="modal__rows row">
+                              <div class="modal__forms col-md-6">
+                                <h4 class="modal__forms-title">Create an account</h4>
+                                <p class="modal__forms-text">No account? Create one here:</p>
+                                <form class="modal__forms-form" action="https://echo.htmlacademy.ru/" method="post">
+                                  <div class="modal__forms-group">
+                                    <label class="modal__form-lb" for="name"><i class="bi bi-person moda__form-icon"></i></label>
+                                    <input class="moda__form-inp" type="text" name="name" id="name" placeholder="First Name" required>
+                                  </div>
+                                  <div class="modal__forms-group">
+                                    <label class="modal__form-lb" for="name"><i class="bi bi-person moda__form-icon"></i></label>
+                                    <input class="moda__form-inp" type="text" name="name" id="name" placeholder="Last Name" required>
+                                  </div>
+                                  <div class="modal__forms-group">
+                                    <label class="modal__form-lb" for="mail"><i class="bi bi-envelope  moda__form-icon"></i></label>
+                                    <input class="moda__form-inp" type="email" name="mail" id="mail" placeholder="Email" required>
+                                  </div>
+                                  <div class="modal__forms-group">
+                                    <label class="modal__form-lb" for="pass"><i class='bx bx-lock-open moda__form-icon'></i></label>
+                                    <input class="moda__form-inp" type="password" name="password" id="pass" placeholder="Password" required>
+                                  </div>
+                                  <div class="modal__form-checks">
+                                    <input class="modal__form-check" type="checkbox" id="check">
+                                    <label for="check"><a class="modal__form-checklb" href="#">Sign up for our newsletter</a></label>
+                                  </div>
+                                  <div class="modal__form-btns">
+                                    <a class="btn btn-dark modal__form-btn" href="#">register</a>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="moda__forms col-md-6">
+                                <h4 class="modal__forms-title">Login</h4>
+                                <p class="modal__forms-text">Insert your account information:</p>
+                                <form class="modal__forms-form" action="https://echo.htmlacademy.ru/" method="post">
+                                  <div class="modal__forms-group">
+                                    <label class="modal__form-lb" for="mail"><i class="bi bi-envelope  moda__form-icon"></i></label>
+                                    <input class="moda__form-inp" type="email" name="mail" id="mail" placeholder="Email" required>
+                                  </div>
+                                  <div class="modal__forms-group">
+                                    <label class="modal__form-lb" for="pass"><i class='bx bx-lock-open moda__form-icon'></i></label>
+                                    <input class="moda__form-inp" type="password" name="password" id="pass" placeholder="Password" required>
+                                  </div>
+                                  <div class="modal__form-forgot">
+                                    <p class="modal__form-forgot-text"><span class="modal__form-forgot-icon"><i class="bi bi-envelope-fill"></i></span>Forgot your <a href="#">Password ?</a></p>
+                                  </div>
+                                  <div class="modal__form-btns">
+                                    <a class="btn btn-dark modal__form-btn modal__form-btnss" href="#">login</a>
+                                  </div>
+                                  </form>
+                              </div>  
+                            </div>
+                          </div>
+                          <div class="modal-footer desktop-top__modal-ft">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </li>
+                    <li class="desktop-top__item">
+                      <a class="desktop-top__link desktop-top__links" href="#"><i class='bx bx-heart'></i></a>
+                    </li>
+                    <li class="desktop-top__item">
+                      <a class="desktop-top__link" href="#"><i class="bi bi-basket2"></i></a>
+                    </li>
+                    <li class="desktop-top__item">
+                      <a class="desktop-top__link dropdown" data-bs-toggle="dropdown" href="#"><i class="bi bi-gear"></i></a>
+                      <div class="dropdown-menu desktop-top__dropdown">
+                        <ul class="dropdown__list">
+                          <li class="dropdown-item desktop-top__dropdown-item"><span class="dropdown__icon"><i class="bi bi-gear"></i></span><a class="desktop-top__dropdown-link" href="#">Login</a></li>
+                          <li class="dropdown-item desktop-top__dropdown-item"><span class="dropdown__icon"><i class="bi bi-box-arrow-in-right"></i></span><a class="desktop-top__dropdown-link" href="#">Register Account</a></li>
+                          <li class="dropdown-item desktop-top__dropdown-item"><span class="dropdown__icon dropdown__icons"><i class="bi bi-check-circle-fill"></i></span><a class="desktop-top__dropdown-link" href="#">Check Out</a></li>
+                          <li class="dropdown-item desktop-top__dropdown-item"><span class="dropdown__icon dropdown__icons"><i class="bi bi-heart-fill"></i></span><a class="desktop-top__dropdown-link" href="#">My Wishlist</a></li>
+                        </ul>
+                        <div class="dropdown__currens">
+                          <h4 class="dropdown__currens__title">Currnesy</h4>
+                        </div>
+                        <ul class="dropdown__currens-list d-flex">
+                          <li class="dropdown__currens-item dropdown__currens-item--active"><a class="dropdown__currens-link" href="">usd</a></li>
+                          <li class="dropdown__currens-item"><a class="dropdown__currens-link" href="">eur</a></li>
+                          <li class="dropdown__currens-item"><a class="dropdown__currens-link" href="">gbp</a></li>
+                        </ul>
+                      </div>
+                    </li>
                   </ul>
-                </div>
-                </div>
                 </div>
               </div>
            </div>
@@ -128,31 +208,88 @@
               <nav class="header-bottom__nav d-flex justify-content-center">
                 <ul class="header-bottom__list d-flex">
                   <li class="header-bottom__item">
-                    <a class="header-bottom__link" href="#">HOME</a> 
+                    <a class="header-bottom__link header-bottom__link--active" href="#">HOME</a> 
                   </li>
                   <li class="header-bottom__item dropdown">
                     <a class="header-bottom__link dropdown" data-bs-toggle="dropdown" href="#">ALL DEMOS <span><i class='bx bx-chevron-down'></i></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Link 1</a></li>
-                      <li><a class="dropdown-item" href="#">Link 2</a></li>
-                      <li><a class="dropdown-item" href="#">Link 3</a></li>
-                    </ul>
+                    <div class="dropdown-menu homepage__menu">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <ul class="header-bottom__grlist homepage">
+                            <li class="homepage__items"><h3 class="homepage__title">homepage electronic v1</h3></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 1</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 2</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 3</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 4</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 5</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 6</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 7</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 8</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 9</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <ul class="header-bottom__grlist homepage">
+                            <li class="homepage__items"><h3 class="homepage__title">homepage electronic v2</h3></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 10</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 11</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 12</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 13</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 14</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 15</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 16</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 17</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Homepage Electronic 18</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </li>
                   <li class="header-bottom__item">
                     <a class="header-bottom__link dropdown" href="#" data-bs-toggle="dropdown">PAGES  <span><i class='bx bx-chevron-down'></i></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Link 1</a></li>
-                      <li><a class="dropdown-item" href="#">Link 2</a></li>
-                      <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    <ul class="dropdown-menu landing__menu">
+                      <li class="homepage__item landing__item"><a class="homepage__link landing__link" href="#">Landing Page</a></li>
+                      <li class="homepage__item landing__item"><a class="homepage__link landing__link" href="#">Inner Pages</a></li>
+                      <li class="homepage__item landing__item"><a class="homepage__link homepage__item" href="#">Inner Pages</a></li>
                     </ul>
                   </li>
                   <li class="header-bottom__item">
                     <a class="header-bottom__link dropdown" href="#" data-bs-toggle="dropdown">CATEGORIES <span><i class='bx bx-chevron-down'></i></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Link 1</a></li>
-                      <li><a class="dropdown-item" href="#">Link 2</a></li>
-                      <li><a class="dropdown-item" href="#">Link 3</a></li>
-                    </ul>
+                    <div class="dropdown-menu categories">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                          <ul class="header-bottom__grlist categories__list-one homepage">
+                            <li class="homepage__items"><h3 class="homepage__title">Collection page</h3></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Without Sidebar Layout</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Left Sidebar Layout</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Right Sidebar Layout</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Full Width Layout</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                          <ul class="header-bottom__grlist homepage">
+                            <li class="homepage__items"><h3 class="homepage__title">Product Detail Page</h3></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Accordions Description 1</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Accordions Description 2</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Accordions Description 1</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Product Tab Description</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Product Thumbnail Vertical</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Product With Sidebar</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Product All Thumbnail</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Product Grid Thumbnail</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                          <ul class="header-bottom__grlist homepage">
+                            <li class="homepage__items"><h3 class="homepage__title">homepage electronic v2</h3></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Color variant - Text box</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Color variant - Image </a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Color variant - Color box</a></li>
+                            <li class="homepage__item"><a class="homepage__link" href="#">Color varian - Dropdown box</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </li>
                   <li class="header-bottom__item">
                     <a class="header-bottom__link dropdown" href="#" data-bs-toggle="dropdown">BLOG  <span><i class='bx bx-chevron-down'></i></span></a>
@@ -176,11 +313,11 @@
         <div class="carousel-item active">
           <img class="hero__img" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/slider-show-1_66ffbc40-efeb-48a4-95d8-590eba9597fd_2048x.jpg?v=1601620725" class="d-block w-100" alt="hero-img">
             <div class="hero__des">
-            <p class="hero__text-color">From <span class="hero__dollor"><sup>$</sup></span>1900</p>
-            <h2 class="hero__title">VINOVA SMARTPHONE</h2>
-            <p class="hero__text">Pros love iMac. So we created one just for you. It’s packed with the most powerful graphics and processors ever in a Mac, along with the most advanced storage, memory.</p>
+            <p class="hero__text-color hero__text-color-one">From <span class="hero__dollor"><sup>$</sup></span>1900</p>
+            <h2 class="hero__title hero__title-one">VINOVA SMARTPHONE</h2>
+            <p class="hero__text hero__text-one">Pros love iMac. So we created one just for you. It’s packed with the most powerful graphics and processors ever in a Mac, along with the most advanced storage, memory.</p>
             <div class="hero__btns">
-              <a class="hero__btn btn-primary" href="#"><span class="hero__iconss"><i class="bi bi-bag"></i></span> SHOP NOW</a>
+              <a class="hero__btn btn-primary hero__btn-one" href="#"><span class="hero__iconss"><i class="bi bi-bag"></i></span> SHOP NOW</a>
             </div>
           </div>
         </div>
@@ -188,8 +325,8 @@
           <img class="hero__img" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/slider-show-2_341dac96-3ed1-4ce8-8343-daa4c6d8b224_2048x.jpg?v=1601621068" class="d-block w-100" alt="hero-img">
           <div class="hero__dess">
             <p class="hero__text-color text-center">From <span class="hero__dollor"><sup>$</sup></span>1900</p>
-            <h2 class="hero__title text-center">MACBOOK AIR</h2>
-            <p class="hero__texts text-center">Powerful creativity and productivity tools live inside every Mac — apps <br>
+            <h2 class="hero__title text-center hero__title-two">MACBOOK AIR</h2>
+            <p class="hero__texts text-center hero__text-two">Powerful creativity and productivity tools live inside every Mac — apps <br>
               that help you explore, connect, and work more efficiently.</p>
             <div class="hero__btns d-flex justify-content-center">
               <a class="hero__btn hero__btn-two btn-primary" href="#"><span class="hero__iconss"><i class="bi bi-bag"></i></span> SHOP NOW</a>
@@ -200,8 +337,8 @@
           <img class="hero__img" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/slider-show-3_35382bde-054c-4c31-a610-76b28ce97330_2048x.jpg?v=1601621098" class="d-block w-100" alt="hero-img">
           <div class="hero__dess">
             <p class="hero__text-color text-center hero__text-color-two">From <span class="hero__dollor"><sup>$</sup></span>2900</p>
-            <h2 class="hero__title text-center">Vinova SmartPhone</h2>
-            <p class="hero__texts text-center">Powerful creativity and productivity tools live inside every Mac — apps <br>
+            <h2 class="hero__title text-center hero__title-one">Vinova SmartPhone</h2>
+            <p class="hero__texts text-center hero__text-one">Powerful creativity and productivity tools live inside every Mac — apps <br>
               that help you explore, connect, and work more efficiently.</p>
             <div class="hero__btns d-flex justify-content-center">
               <a class="hero__btn hero__btn-two hero__btn-three btn-primary" href="#"><span class="hero__iconss"><i class="bi bi-bag"></i></span> SHOP NOW</a>
@@ -219,6 +356,8 @@
       </button>
     </div>
   </div>
+  <section>
+  </section>
 </body>
 <script src="js/main.js"></script>
 </html>
