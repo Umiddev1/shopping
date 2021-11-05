@@ -8,6 +8,9 @@
     height: 12%;
     background-color: #111;
   }
+  .hero__groups {
+    position: relative;
+  }
   &__des {
     position: absolute;
     bottom: 25%;
@@ -55,7 +58,7 @@
   .hero__dess {
     position: absolute;
     z-index: 999;
-    left: 350px;
+    left: 26%;
     top: 10%;
   }
   .hero__texts {
@@ -219,7 +222,7 @@
   @media screen and (max-width: 1100px) {
     .hero {
       .hero__dess {
-        left: 220px;
+        left: 20%;
       }
     }
     
@@ -227,7 +230,7 @@
   @media screen and (max-width :990px) {
       .hero {
         .hero__dess {
-          left: 160px;
+          left: 17%;
         }
       }
   }
@@ -240,7 +243,7 @@
   @media screen and (max-width: 842px) {
       .hero {
         .hero__dess {
-          left: 90px;
+          left: 12%;
         }
       }
   }
