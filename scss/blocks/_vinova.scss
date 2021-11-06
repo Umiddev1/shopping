@@ -1,0 +1,10 @@
+.vinova {
+  padding-top: 50px;
+  padding-bottom: 30px
+}
+.vin__imgs {
+  @include card-hover;
+}
+.vin__img {
+  cursor: pointer;
+}

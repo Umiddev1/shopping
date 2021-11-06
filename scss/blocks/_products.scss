@@ -27,17 +27,13 @@
   margin: 0 auto;
   margin-bottom: 3rem;
 }
-.product__list {
-  // height: 500px;
-}
 .product__link {
   font-family: $font-roboto;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  padding: 11px 0;
-  min-width: 140px;
+  padding: 11px 25px;
   border-radius: 40px;
   margin-right: 10px;
   transition: all 0.2s ease;
@@ -45,6 +41,9 @@
     background-color: $color-hd-bg;
     color: #fff;
   }
+}
+.tabcontent {
+  margin-top: 50px;
 }
 .product__link--active {
   background-color: $color-hd-bg;
@@ -192,4 +191,21 @@
 .product__item:hover .product__sale {
   visibility: visible;
   opacity: 1;
+}
+
+@media screen and (max-width: 360px) {
+  .product__list {
+    margin: 0;
+    padding: 0;
+  }
+  .product__link {
+    padding: 5px 10px;
+    font-size: 8px;
+  }
+  .product__item:hover .product__btn-one {
+    transform: translateY(-50px);
+  }
+  .product__item:hover .product__btn-two {
+    transform: translateY(-50px);
+  }
 }

@@ -1347,6 +1347,7 @@ a {
 .servic {
   overflow-x: hidden;
   padding-bottom: 75px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .servic__title {
@@ -1414,8 +1415,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  padding: 11px 0;
-  min-width: 140px;
+  padding: 11px 25px;
   border-radius: 40px;
   margin-right: 10px;
   transition: all 0.2s ease;
@@ -1423,6 +1423,10 @@ a {
 .product__link:hover {
   background-color: #105caa;
   color: #fff;
+}
+
+.tabcontent {
+  margin-top: 50px;
 }
 
 .product__link--active {
@@ -1590,4 +1594,378 @@ a {
 .product__item:hover .product__sale {
   visibility: visible;
   opacity: 1;
+}
+
+@media screen and (max-width: 360px) {
+  .product__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .product__link {
+    padding: 5px 10px;
+    font-size: 8px;
+  }
+
+  .product__item:hover .product__btn-one {
+    transform: translateY(-50px);
+  }
+
+  .product__item:hover .product__btn-two {
+    transform: translateY(-50px);
+  }
+}
+.vinova {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.vin__imgs {
+  overflow: hidden;
+  position: relative;
+}
+.vin__imgs::after {
+  content: "";
+  display: inline-block;
+  width: 150%;
+  height: 80%;
+  position: absolute;
+  top: -75%;
+  right: 32%;
+  background: #ffffff26;
+  transform: skewY(-50deg);
+  transition: all 0.35s ease;
+}
+.vin__imgs:hover::after {
+  top: 120%;
+  right: -75%;
+  transition: all 0.35s ease;
+}
+
+.vin__img {
+  cursor: pointer;
+}
+
+.deals {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.deals__container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.deals__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 50px;
+}
+
+.deals__item {
+  max-width: 370px;
+  height: 370px;
+  margin-bottom: 170px;
+  position: relative;
+  background-image: url("https://cdn.shopify.com/s/files/1/0272/1493/8165/products/1_e1430135-e18d-49f4-b4f4-6241295c4c82_470x.jpg?v=1573182864");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: background 0.3s ease;
+}
+.deals__item:hover {
+  background-image: url("https://cdn.shopify.com/s/files/1/0272/1493/8165/products/6_5322ea78-198c-4ddf-be4a-53d5282e6364_470x.jpg?v=1573182864");
+}
+
+.deals__item:nth-child(2) {
+  margin: 0 30px;
+  margin-bottom: 170px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0272/1493/8165/products/3_1e01e241-0041-49c5-b3e2-65b70b7ae119_470x.jpg?v=1573183327");
+}
+.deals__item:nth-child(2):hover {
+  background-image: url("https://cdn.shopify.com/s/files/1/0272/1493/8165/products/8_470x.jpg?v=1573183327");
+}
+
+.deals__item:nth-child(3) {
+  background-image: url("https://cdn.shopify.com/s/files/1/0272/1493/8165/products/8_470x.jpg?v=1573183327");
+}
+.deals__item:nth-child(3):hover {
+  background-image: url("https://cdn.shopify.com/s/files/1/0272/1493/8165/products/13_470x.jpg?v=1573184521");
+}
+
+.deals__inner-list {
+  position: absolute;
+  top: 20%;
+  right: 15px;
+}
+
+.deals__inner-item {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+}
+
+.deals__inner-span {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  display: inline-block;
+  margin-top: 6px;
+  color: #222;
+  border-bottom: 1px solid #ccc;
+}
+
+.deals__inner-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.deals__sale {
+  position: absolute;
+  bottom: -140px;
+  transform: translateX(40%);
+}
+
+.deals__btn-one {
+  transform: translateY(100px);
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.deals__btn-two {
+  transform: translateY(110px);
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.deals__item:hover .deals__btn-one {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.deals__item:hover .deals__btn-two {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.deals__icon {
+  color: #ffd201;
+}
+
+.deals__del {
+  font-family: 30px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #e0e0e0;
+  margin-left: 10px;
+}
+
+.bags {
+  position: relative;
+}
+
+.deals__check {
+  font-size: 18px;
+  position: absolute;
+  left: -15px;
+  top: -2px;
+}
+
+@media screen and (max-width: 360px) {
+  .deals__container {
+    padding-right: 50px;
+  }
+
+  .deals__item {
+    background-size: 200px, 200px;
+    margin-bottom: 16px;
+  }
+
+  .deals__item:nth-child(2) {
+    margin-bottom: 16px;
+  }
+
+  .deals__inner-item {
+    display: none;
+  }
+
+  .deals__sale {
+    left: -21%;
+    bottom: -50px;
+  }
+
+  .deals__item:hover .deals__btn-one {
+    transform: translateY(-50px);
+  }
+
+  .deals__item:hover .deals__btn-two {
+    transform: translateY(-50px);
+  }
+}
+.news {
+  background-color: #105caa;
+}
+
+.news__contents {
+  padding: 30px 0;
+}
+
+.news__social-list {
+  margin: 0;
+  padding: 0;
+}
+
+.news__social-item {
+  margin-right: 19px;
+}
+
+.news__social-link {
+  font-size: 25px;
+  color: #fff;
+}
+.news__social-link:hover {
+  color: tomato;
+}
+
+.news__forms {
+  position: relative;
+  left: 150px;
+}
+
+.news__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-right: 30px;
+}
+
+.news__inp {
+  width: 370px;
+  height: 46px;
+  border: none;
+  font-size: 11px;
+  padding-left: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background: #fff;
+  border-radius: 40px !important;
+  z-index: initial;
+  outline: none;
+}
+
+.news__btn {
+  position: absolute;
+  right: 155px;
+  top: 2px;
+  height: 42px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0 17px;
+  background-color: #105caa;
+  border-radius: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  transition: background 0.3s ease;
+}
+.news__btn:hover {
+  background-color: #fd6666;
+}
+
+@media screen and (max-width: 768px) {
+  .news__inp {
+    display: none;
+  }
+
+  .news__title {
+    display: none;
+  }
+
+  .news__social-list {
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .news__btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 360px) {
+  .news__social-list {
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+.footer {
+  margin-top: 50px;
+}
+
+.footer__item {
+  margin-bottom: 5px;
+}
+
+.footer__items {
+  display: flex;
+}
+
+.footer__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #222;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #666;
+  font-weight: 400;
+}
+
+.footer__links {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.footer__bottom {
+  background-color: #f0f0f0;
+}
+
+.footer__bottom-list {
+  padding: 28px 0;
+}
+
+.footer__bottom-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #666;
+}
+
+@media screen and (max-width: 767) {
+  .footer__bottom {
+    margin-bottom: 28px;
+  }
 }/*# sourceMappingURL=main.css.map */
